@@ -1,0 +1,82 @@
+* {
+    font-family: sans-serif;
+    color: white;
+}
+
+#back {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/keeper_of_the_stars_by_ellysiumn_dc6tbrt-fullview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 97vh;
+}
+
+.mini-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(200, 200, 200, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.section {
+
+}
+
+.show {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 50px;
+    width: 250px;
+    padding: 0px 20px;
+    text-align: right;
+    font-size: x-large;
+}
+
+#show-1 {
+    margin-top: 50px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-item .button {
+    min-width: 100%;
+    font-size: x-large;
+    padding: 15px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.grid-item .button:hover {
+    transition-duration: 500ms;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button {
+    border: none;
+    outline: none;
+}

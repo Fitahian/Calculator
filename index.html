@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="back"></div>
+
+    <div class="container">
+        <div class="mini-container" id="content">
+            <div class="section">
+                <div class="show" id="show-1"></div>
+                <div class="show" id="show-2"1>0</div>
+            </div>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <button class="button" onclick="clearScreen()">C</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="del()">Del</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('%')">%</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('/')">/</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('7')">7</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('8')">8</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('9')">9</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('*')">*</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('4')">4</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('5')">5</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('6')">6</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('-')">-</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('1')">1</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('2')">2</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('3')">3</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('+')">+</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('0')">0</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('00')">00</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="add('.')">.</button>
+                </div>
+                <div class="grid-item">
+                    <button class="button" onclick="getResult()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/tilt.js"></script>
+    <script>
+        JSTilt.init(document.getElementById('content'), 500)
+    </script>
+</body>
+</html>
